@@ -1,17 +1,20 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage ("firststage")
-        steps{
-
+        stage("firststage") {
+            steps {
+                echo "Hello from First Stage"
+            }
+        }
+        stage("secondstage") {
+            steps {
+                echo "Hello from Second Stage"
+            }
+        }
+        stage("Thirdstage") {
+            steps {
+                echo "Hello from Third Stage"
+            }
         }
     }
-        stage ("secondstage")
-        steps {
-        }
-        stage ("Thirdstage")
-        steps {
-            
-        }
-
 }
